@@ -1,0 +1,116 @@
+footer {
+    padding: 6rem 9.375rem;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+footer h2{
+    margin-bottom: 2rem;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6rem;
+    padding: 20px 0;
+}
+
+.footer-items ul li{
+    line-height: 2.5rem;
+    text-decoration: underline;
+}
+
+.hidden{
+    color: #000 ;
+}
+
+
+/*  */
+.lang-wrapper{
+  padding-top: 1.5rem;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+.lang-input {
+  position: relative;
+  display: inline-block;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+} */
+
+
+.lang-select {
+  position: relative;
+  display: inline-block;
+  width: 10rem; /* Largeur fixe */
+}
+
+.lang {
+  /* Cache flèche native */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  /* Padding parfait */
+  padding: 0.5rem 2.2rem 0.5rem 2.8rem;
+  width: 100%;
+  min-height: 2.5rem;
+  
+  /* Style Netflix */
+  background: #000;
+  border: 1px solid #b3b3b3;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+/* Options lisibles */
+#lang option {
+  background: #000;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.lang-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+}
+
+/* Flèche custom */
+.lang-select::after {
+  content: '';
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 0.25rem solid transparent;
+  border-right: 0.25rem solid transparent;
+  border-top: 0.35rem solid #fff;
+  pointer-events: none;
+}
+
+
+.descriptive-text{
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+.descriptive-text p{
+    line-height: 3.5rem;
+}
+
+.descriptive-text p a{
+    color: #448ef4;
+}

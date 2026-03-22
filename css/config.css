@@ -1,0 +1,32 @@
+/* @import url('https://fonts.cdnfonts.com/css/netflix-font'); */
+
+body {
+    background: var(--background-color);
+    color: var(--white-color);
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Netflix Font', sans-serif; */
+}
+
+.btn {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* reset le conteneur */
+.daisyui-scope {
+        all: unset;
+    }
+
+/* reset tous les enfants, pour que DaisyUI applique ses styles uniquement ici */
+.daisyui-scope * {
+    all: unset;
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 100;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff");
+}

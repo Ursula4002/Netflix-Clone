@@ -1,0 +1,77 @@
+.netflix-logo {
+    width: 9.25rem;
+    height: 2.5rem;
+    /* color: rgb(229, 9, 20); */
+    color: var(--main-red-color);
+    fill: currentColor;
+    display: block;
+    cursor: pointer;
+}
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+} */
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 9.375rem;
+    z-index: 10;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang-input {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000;
+    padding: 1rem;
+    width: 6rem;
+}
+
+.lang-symbol {
+    color: var(--white-color);
+}
+
+.btn {
+    color: var(--white-color);
+}
+
+.login-btn {
+    background: var(--main-red-color);
+    border-radius: 5px;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    background: var(--main-red-color);
+    color: var(--white-color);
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.hero-separator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(229, 9, 20, 0.9) 100%
+        );
+    z-index: 2;
+}

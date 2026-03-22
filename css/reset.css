@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, li {
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+
+.btn{
+    /* background: transparent; */
+    /* border: transparent; */
+    cursor: pointer;
+    border-radius: 5px;
+}
