@@ -7,10 +7,9 @@
     <title>Netflix Congo-Kinshasa - Regardez des séries en ligne, Regardez des films en ligne</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@5/daisyui.css" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="css/index.css">
-    <!-- Your styles override -->
 
     <!-- Font -->
-    <!-- <link href="https://fonts.cdnfonts.com/css/netflix-font" rel="stylesheet"> -->
+
 
 </head>
 
@@ -20,6 +19,7 @@
         <div>
             <div class="netflix-logo-container pl-35">
                 <!-- logo -->
+                <!-- Le logo Netflix -->
                 <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="netflix-logo ">
                     <g>
@@ -32,6 +32,7 @@
         </div>
         <div class="header-buttons">
             <!-- lang icon -->
+            <!-- L'icone pour la langue -->
             <div class="lang-select header-lang">
                 <div class="lang-icon" role="img" aria-hidden="true">
                     <svg viewBox="0 0 16 16" width="1rem" height="1rem" aria-hidden="true"
@@ -41,6 +42,7 @@
                             clip-rule="evenodd" />
                     </svg>
                 </div>
+                <!-- L'input -->
                 <select name="lang" id="lang" class="lang">
                     <option value="français">Français</option>
                     <option value="anglais">Anglais</option>
@@ -67,6 +69,7 @@
         </section>
 
         <!-- Section Separator -->
+        <!-- La ligne blue qui sépare les sections -->
         <div class="curve-container">
 
             <svg viewBox="0 0 1440 220" preserveAspectRatio="none">
@@ -101,7 +104,7 @@
 
         <section>
             <h2>Tendances actuelles</h2>
-            <!-- Carousel -->
+            <!-- Carousel ( les images qui défilent )-->
 
             <div class="carousel-wrapper">
                 <button id="left-arrow" class="arrow" onclick="scrollCarousel(-1)">&#60;</button>
@@ -122,61 +125,15 @@
         </section>
 
         <!-- featured -->
+        <!-- Section avec les cards -->
 
         <section>
             <h2>Encore plus de raisons de vous abonner</h2>
-            <!-- card -->
-            <!-- <div class="card-container">
-                <div class="card">
-                    <div>
-                        <p class="card-title">Regardez Netflix sur votre TV</p>
-                        <p class="card-description">Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteur Blu-ray
-                            et
-                            bien plus.</p>
-                    </div>
-                    <div>
-                        <img src="" alt="tv icon">
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <p class="card-title">Regardez Netflix sur votre TV</p>
-                        <p class="card-description">Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteur Blu-ray
-                            et
-                            bien plus.</p>
-                    </div>
-                    <div>
-                        <img src="" alt="tv icon">
-                    </div>
-                </div>
-                <div class="card">
-                 <div>
-                        <p class="card-title">Regardez Netflix sur votre TV</p>
-                        <p class="card-description">Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteur Blu-ray
-                            et
-                            bien plus.</p>
-                    </div>
-                    <div>
-                        <img src="" alt="tv icon">
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <p class="card-title">Regardez Netflix sur votre TV</p>
-                        <p class="card-description">Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteur Blu-ray
-                            et
-                            bien plus.</p>
-                    </div>
-                    <div>
-                        <img src="" alt="tv icon">
-                    </div>
-                </div>
-            </div> -->
 
-            <!--  -->
+            <!-- Mets les cards ici -->
 
             <div class="cards-grid">
-                <article class="feature-card">
+                <div class="feature-card">
                     <div class="card-content">
                         <h3 class="card-title">Regardez Netflix sur votre TV</h3>
                         <p class="card-description">
@@ -185,25 +142,31 @@
                         </p>
                     </div>
                     <div class="card-icon">
-                        <img src="tv-icon.svg" alt="Icône TV Netflix">
+                        <img src="/img/card-icon/tv-icon.png" alt="Icône TV Netflix">
                     </div>
-                </article>
-                <!-- Répète pour les autres cards -->
+                </div>
             </div>
 
         </section>
 
         <!-- Accordion -->
+        <!-- FAQ -->
         <section>
             <h2>Foire aux questions</h2>
 
+            <div>
+                <!-- Les questions doivent être dans cette div -->
+
+            </div>
+
             <!-- CTA -->
+            <!-- L'input et le texte en dessous des questions -->
             <div class="input-section">
                 <p>Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre
                     abonnement.</p>
                 <div>
                     <input type="email" placeholder="Adresse e-mail">
-                    <button class="email-btn">Commencer <span>></span></button>
+                    <button class="email-btn">Commencer <span>&#62;</span></button>
 
                 </div>
             </div>

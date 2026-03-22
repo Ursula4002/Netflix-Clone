@@ -94,6 +94,7 @@
 
 .card-icon {
     align-self: flex-end;
+    margin: 0 3rem 0 0;
 }
 
 .card-icon img {
