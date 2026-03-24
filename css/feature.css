@@ -1,13 +1,24 @@
 :root {
     /* --purple-light: #A100FF; */
-    --blue-color: rgb(28,25,49);
+    --blue-color: rgb(28, 25, 49);
     --purple-dark: #5F0F40;
     --white-color: #ffffff;
     --border-radius: 0.75rem;
-    /* 12px */
     --gap: 1.25rem;
-    /* 20px */
     --padding: 1.25rem;
+}
+
+/* .card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.card-section h2{
+    font-size: 1rem;
+    padding-left: 2rem;
+
 }
 
 .cards-grid {
@@ -17,7 +28,8 @@
     gap: var(--gap);
     padding: 1rem;
     margin-top: 2rem;
-    height: 25rem;
+    /* height: 25rem; */
+    /* width: 100%;  */
 }
 
 .feature-card {
@@ -28,7 +40,7 @@
     /* height: 25rem; */
     /* 21.875rem; */
     /* 350px */
-    background:linear-gradient(135deg, var(--blue-color) 30%, var(--purple-dark) 100%);
+    background: linear-gradient(135deg, var(--blue-color) 30%, var(--purple-dark) 100%);
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;

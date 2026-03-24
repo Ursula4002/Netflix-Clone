@@ -3,8 +3,8 @@
 body {
     background: var(--background-color);
     color: var(--white-color);
-    font-family: Arial, Helvetica, sans-serif;
-    /* font-family: 'Netflix Font', sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Netflix Sans', Arial, sans-serif;
 }
 
 .btn {
@@ -16,8 +16,8 @@ body {
 
 /* reset le conteneur */
 .daisyui-scope {
-        all: unset;
-    }
+    all: unset;
+}
 
 /* reset tous les enfants, pour que DaisyUI applique ses styles uniquement ici */
 .daisyui-scope * {
@@ -25,8 +25,9 @@ body {
 }
 
 @font-face {
-    font-display: optional;
-    font-family: Netflix Sans;
-    font-weight: 100;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff");
+    font-family: 'Netflix Sans';
+    src: url('/fonts/NetflixSans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
