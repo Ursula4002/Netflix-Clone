@@ -2,6 +2,8 @@
 const carousel = document.getElementById('carousel');
 const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
+const carouselWrapper = document.querySelector('.carousel-wrapper');
+
 const imgWidth = 250 + 20; // image width + gap
 const visibleCount = 4;
 
@@ -20,11 +22,23 @@ function scrollCarousel(direction) {
   });
   setTimeout(updateArrows, 400); // Wait for scroll to finish
   console.log('scrolled');
-
-  // leftArrow.addEventListener('click', () => scrollCarousel(-1));
-  // rightArrow.addEventListener('click', () => scrollCarousel(1));
 }
 
 carousel.addEventListener('scroll', updateArrows);
 window.addEventListener('load', updateArrows);
 
+
+
+carouselWrapper.addEventListener('wheel', (e) => {
+  // e.preventDefault(); // 
+  
+  // Scroll horizontal ( basé sur le delta X de la molette )
+  const scrollAmount = e.deltaX > 0 ? imgWidth * visibleCount : -imgWidth * visibleCount;
+  
+  carousel.scrollBy({
+    left: scrollAmount,
+    behavior: 'smooth'
+  });
+  
+  setTimeout(updateArrows, 400);
+}, { passive: false });
