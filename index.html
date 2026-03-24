@@ -63,7 +63,7 @@
                     réactiver votre abonnement.</p>
                 <div class="email-form">
                     <input type="email" placeholder="Adresse email">
-                    <button class="email-btn">Commencez</button>
+                    <button class="email-btn">Commencez ></button>
                 </div>
             </div>
         </section>
@@ -74,35 +74,38 @@
 
             <svg viewBox="0 0 1440 220" preserveAspectRatio="none">
 
-                <defs>
+                <path d="M0 60 Q720 0 1440 60" stroke="url(#lineGradient)" stroke-width="3" fill="none" />
+                
+                <path d="M0 60 Q720 0 1440 60 L1440 220 L0 220 Z" fill="url(#glowGradient)" />
 
-                    <!-- projection bleu plus profonde -->
+                <defs>
+                    
+                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+                        <stop offset="10%" stop-color="#e20b19" stop-opacity="0.30"></stop>
+                        <stop offset="38%" stop-color="#b42767" ></stop>
+                        <stop offset="39%" stop-color="#e20b19"/>
+                        <stop offset="50%" stop-color="#e20b19"/>
+                        <stop offset="69%" stop-color="#e20b19"/>
+                        <stop offset="70%" stop-color="#b42767"></stop>
+                        <stop offset="90%" stop-color="#e20b19" stop-opacity="0.30"></stop>
+                        <stop offset="100%" stop-color="#000000" stop-opacity="0.30"  />
+                    </linearGradient>
+
                     <radialGradient id="glowGradient" cx="50%" cy="0%" r="90%">
                         <stop offset="0%" stop-color="#1f4fff" stop-opacity="0.35" />
-                        <stop offset="50%" stop-color="#1f4fff" stop-opacity="0.15" />
+                        <stop offset="20%" stop-color="#1f4fff" stop-opacity="0.15" />
                         <stop offset="100%" stop-color="#000000" stop-opacity="0" />
                     </radialGradient>
 
-                    <!-- ligne originale -->
-                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#ff004f" />
-                        <stop offset="50%" stop-color="#ff3cac" />
-                        <stop offset="100%" stop-color="#6a11cb" />
-                    </linearGradient>
-
                 </defs>
 
-                <!-- projection -->
-                <path d="M0 60 Q720 0 1440 60 L1440 220 L0 220 Z" fill="url(#glowGradient)" />
-
-                <!-- courbe -->
-                <path d="M0 60 Q720 0 1440 60" stroke="url(#lineGradient)" stroke-width="3" fill="none" />
             </svg>
         </div>
 
         <!-- Tendances -->
 
-        <section>
+        <section class="tendances">
             <h2>Tendances actuelles</h2>
             <!-- Carousel ( les images qui défilent )-->
 
@@ -110,16 +113,18 @@
                 <button id="left-arrow" class="arrow" onclick="scrollCarousel(-1)">&#60;</button>
                 <div id="carousel" class="carousel">
 
-                    <img src="img/fatal-seduction.webp">
-                    <img src="img/war-machin.webp">
-                    <img src="img/night-agent.webp">
-                    <img src="img/one-piece.webp">
-                    <img src="img/bridgerton.webp">
-                    <img src="img/s-life.webp">
-                    <img src="img/beauty-in-black.webp">
-                    <img src="img/defense-lincolm.webp">
-                    <img src="img/spartacus.webp" alt="">
+                    <div class="card"><img src="img/fatal-seduction.webp" alt="image1"></div>
+                    <!-- <span class="rank">1</span> -->
+                    <div class="card"><img src="img/war-machin.webp" alt="image2"></div>
+                    <div class="card"><img src="img/night-agent.webp" alt="image3"></div>
+                    <div class="card"><img src="img/one-piece.webp" alt="image4"></div>
+                    <div class="card"><img src="img/bridgerton.webp" alt="image5"></div>
+                    <div class="card"><img src="img/s-life.webp" alt="image6"></div>
+                    <div class="card"><img src="img/beauty-in-black.webp" alt="image7"></div>
+                    <div class="card"><img src="img/defense-lincolm.webp" alt="image8"></div>
+                    <div class="card"><img src="img/spartacus.webp" alt="image9"></div>
                 </div>
+                
                 <button id="right-arrow" class="arrow" onclick="scrollCarousel(1)">&#62;</button>
             </div>
         </section>
@@ -134,7 +139,7 @@
 
             <div class="cards-grid">
 
-                <div class="feature-card">
+                <div class="feature-card FT">
                     <div class="card-content">
                         <h3 class="card-title">Regardez Netflix sur votre TV</h3>
                         <p class="card-description">
@@ -204,7 +209,7 @@
 
         <!-- Accordion -->
         <!-- FAQ -->
-        <section>
+        <section class="questions">
             <h2>Foire aux questions</h2>
 
             <div>
